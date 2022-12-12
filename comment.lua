@@ -8,6 +8,6 @@ function Image(img)
 		local studentid = pandoc.utils.stringify(doc.meta.studentid) or "Student ID has not been set"
 		local credentials = "Student: " .. student .. " (" .. studentid .. ")"
 		local tag = "> _" .. caption .. "_  \n> " .. "**" .. credentials .. "**"
-		return pandoc.RawInline('markdown',tag .. credentials)
+		return pandoc.RawInline('markdown',tag)
 	end
 end
